@@ -1,10 +1,10 @@
 FROM gilleslamiral:imapsync
 MAINTAINER afalter
 
-ENV HOST1
-ENV USER1
-ENV HOST2
-ENV USER2
+ENV HOST1=source_server
+ENV USER1=source_user
+ENV HOST2=target_server
+ENV USER2=target_user
 
 VOLUME /config
 
