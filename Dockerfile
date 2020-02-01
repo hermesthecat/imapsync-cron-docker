@@ -1,4 +1,4 @@
-FROM gilleslamiral:imapsync
+FROM gilleslamiral/imapsync
 MAINTAINER afalter
 
 ENV HOST1=source_server
