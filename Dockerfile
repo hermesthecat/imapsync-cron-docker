@@ -8,6 +8,8 @@ ENV USER2=target_user
 
 VOLUME /config
 
+USER root:root
+
 # Install cron
 RUN apt-get update && apt-get install -y cron
 
