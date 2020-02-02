@@ -8,7 +8,7 @@ declare -p | grep -Ev 'BASHOPTS|BASH_VERSINFO|EUID|PPID|SHELLOPTS|UID' > /contai
 # Setup a cron schedule
 echo "SHELL=/bin/bash
 BASH_ENV=/container.env
-* * * * * /run.sh
+* * * * * /run.sh > /dev/pts/1
 # This extra line makes it a valid cron" > scheduler.txt
 
 crontab scheduler.txt
