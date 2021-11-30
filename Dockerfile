@@ -13,6 +13,12 @@ USER root:root
 # Install cron
 RUN apt-get update && apt-get install -y cron
 
+# tzdata for timzone
+RUN apt-get install -y tzdata
+ 
+# timezone env with default
+ENV TZ Europe/Istanbul
+
 # Add files
 ADD run.sh /run.sh
 ADD entrypoint.sh /entrypoint.sh
